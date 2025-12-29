@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline | Community Feed</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <img src="logo.png" alt="EchoSphere" wigth="80" height="80">
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>Communities</h2>
+            </div>
+
+            <ul class="community-list">
+                <li class="community-item active" data-chat="general"># general</li>
+                <li class="community-item" data-chat="tech"># tech-talk</li>
+                <li class="community-item" data-chat="design"># design-ui</li>
+                <li class="community-item" data-chat="random"># random</li>
+            </ul>
+        </aside>
+
+        <main class="chat-area">
+
+            <header class="chat-header">
+                <div class="header-info">
+                    <h3># General</h3>
+                    <span class="member-count">1,240 members</span>
+                </div>
+            </header>
+
+            <div class="feed" id="feed">
+                <div class="system-message">Welcome to the start of Streamline!</div>
+            </div>
+
+            <footer class="input-zone">
+                <input type="text" id="messageInput" placeholder="Write a message..." autocomplete="off">
+                <button id="sendBtn">Send</button>
+            </footer>
+
+        </main>
+    </div>
+    <div id="contextMenu" class="context-menu">
+        <div class="menu-item" id="editOption">
+            <span></span> Edit
+        </div>
+        <div class="menu-item delete" id="deleteOption">
+            <span></span> Delete
+        </div>
+    </div>
+    <div id="typingIndicator" class="typing-indicator">
+        <span>SomeOne is typing</span>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <footer class="input-zone">
+        <script src="script.js"></script>
+</body>
+
+</html>
